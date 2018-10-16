@@ -6,15 +6,13 @@ body {
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    background-color: gainsboro;
 }
 
 header {
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 #current {
@@ -74,4 +72,23 @@ button {
 
 input {
     border-radius: 5px;
+}
+
+#head-centre {
+    
+}
+
+.grimmy-pic {
+    max-height: 200px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+#grimmy-right {
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
 }

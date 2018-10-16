@@ -11,13 +11,18 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1>Engine Hours Calculator</h1>
+            <img src="img/grimmy.jpg" alt="" class="grimmy-pic" id="grimmy-left">
+            <div id="head-centre">
+                    <h1>Engine Hours Calculator</h1>
+                    <div id="current">
+                            <h3>Current airframe hours</h3>
+                            <input type="number" pattern="[0-9]*" id="curhrs" class="hrs" /> :
+                            <input type="number" pattern="[0-9]*" id="curmins" class="mins" />
+                    </div>
+            </div>
+            <img src="img/grimmy.jpg" alt="" class="grimmy-pic" id="grimmy-right">
         </header>
-        <div id="current">
-            <h3>Current airframe hours</h3>
-            <input type="number" pattern="[0-9]*" id="curhrs" class="hrs" /> :
-            <input type="number" pattern="[0-9]*" id="curmins" class="mins" />
-        </div>
+        
         <div class="eng">
             <label>ECU hours on installation: <br> <input type="number" pattern="[0-9]*" id="ecuhrs1" class="hrs" /> : <input type="number" pattern="[0-9]*" id="ecumins1" class="mins" /></label>
             <label>Airframe hours on installation: <br> <input type="number" pattern="[0-9]*" id="afhrs1" class="hrs" /> : <input type="number" pattern="[0-9]*" id="afmins1" class="mins" /></label>
@@ -34,7 +39,6 @@
                     document.write(year)
                 </script>
                 <a href="mailto:lukew1982@gmail.com">Luke Whitehead</a></p>
-                <p>Design by Andrew Jackson</p>
         </footer>
     </div>
     <script type="text/javascript" src="scripts/enghours.js"></script>
