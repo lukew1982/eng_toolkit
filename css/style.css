@@ -79,7 +79,7 @@ input {
 }
 
 .grimmy-pic {
-    max-height: 200px;
+    height: 150px;
     border: solid 2px black;
     border-radius: 10px;
 }
